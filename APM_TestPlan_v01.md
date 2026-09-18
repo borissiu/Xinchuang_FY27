@@ -1,6 +1,6 @@
 # ZTA/APM Test Plan
 
-| Items |  |
+|  |  |
 |---|---|
 | Document title | ZTA/APM Throughput and Stability Test Plan |
 | Version | 1.0 (Draft) |
