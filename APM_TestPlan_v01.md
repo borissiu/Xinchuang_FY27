@@ -7,7 +7,7 @@
 | Date | 2026-09-17 |
 | Operating system | Kylin OS |
 | SSL Accerlation | No |
-| Xinchuang HW Platform | Hygon CPU |
+| HW Platform | Xinchuang Hygon CPU |
 
 ### Revision history
 
