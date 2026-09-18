@@ -91,11 +91,11 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 
 ### 6.1 Throughput test results
 
-| Test ID | Platform | Sessions | Sessions established | Avg throughput (Gbps) | Peak throughput (Gbps) | CPU avg (%) | CPU peak (%) | Mem avg (GB / %) | Mem peak (GB / %) | Log events (E/W/A count) | Result |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| TP-01 | #1 | 500 CCU | | | | | | | | | |
-| TP-02 | #2 | 500 CCU | | | | | | | | | |
-| TP-03 | #2 | 1500 CCU | | | | | | | | | |
+| Test ID | Platform | Sessions | Sessions established | Avg throughput (Gbps) | Peak throughput (Gbps) | CPU avg (%) | CPU peak (%) | Mem avg (GB / %) | Mem peak (GB / %) | Result |
+|---|---|---|---|---|---|---|---|---|---|---|
+| TP-01 | #1 | 500 CCU | | | | | | | | |
+| TP-02 | #2 | 500 CCU | | | | | | | | |
+| TP-03 | #2 | 1500 CCU | | | | | | | | |
 
 ### 6.2 Stability test results (1 hour)
 
