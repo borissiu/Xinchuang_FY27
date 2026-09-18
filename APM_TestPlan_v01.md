@@ -76,7 +76,7 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
 ### 5.1 Test case summary
 
 | Test ID | Category | Platform | Concurrent SSLVPN | Target throughput | Duration |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|
 | TP-01 | Throughput | HW Platform #1 (Hagon 3250 / YK-BIG-APM-VE-1G-V23) | 500 | 1 Gbps | 5 min steady state |
 | TP-02 | Throughput | HW Platform #2 (Hagon 5280 / YK-BIG-APM-VE-5G-V23) | 500 | 1 Gbps | 5 min steady state |
 | TP-03 | Throughput | HW Platform #2 (Hagon 5280 / YK-BIG-APM-VE-5G-V23) | 1500 | 1 Gbps | 5 min steady state |
