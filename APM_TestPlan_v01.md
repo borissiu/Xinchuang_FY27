@@ -1,8 +1,8 @@
 # ZTA/APM Test Plan
 
-| Field | Value |
+
 |---|---|
-| Document title | ZTA/APM Throughput and Stability Test Plan (SSLVPN Concurrency) |
+| Document title | ZTA/APM Throughput and Stability Test Plan |
 | Version | 1.0 (Draft) |
 | Date | 2026-09-17 |
 | Operating system | Kylin OS |
@@ -21,14 +21,10 @@
 
 Verify that the ZTA/APM appliance meets its published throughput licence capability, remains stable under sustained full-rate load, and preserves service continuity after an HA failover.
 
-1. Sustain **1 Gbps throughput** while serving **500 / 1500 concurrent SSLVPN connections** on the two target hardware platforms.
-2. Sustain the same load **continuously for 1 hour** without performance degradation, resource leak, session loss, or abnormal log/alert/warning/error events.
+## 2. Testing Scope
+1. Sustain 1 Gbps throughput while serving 500 / 1500 concurrent SSLVPN connections on the two target hardware platforms.
+2. Sustain the same load continuously for 1 hour without performance degradation, resource leak, session loss, or abnormal log/alert/warning/error events.
 3. Preserves service continuity after an HA failover
-
-Details information, including CPU loading and Memory usage are recorded for every test case, and the system/appliance logs are inspected for alerts, warnings and errors.
-
-## 2. Scope
-
 
 ## 3. Test environment
 
