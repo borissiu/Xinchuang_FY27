@@ -128,8 +128,8 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 
 ## 8. CCU Simulator
 
-+ Download “Yunke-CCU-Test_v1.mp4” video demo
-++ Take a look the 6 mins video before action
+Download “Yunke-CCU-Test_v1.mp4” video demo
+Take a look the 6 mins video before action
  
 Download “yunke-ccu-v6.tar.zip” image to your docker machine
 <image003.png>
