@@ -21,9 +21,9 @@
 
 Verify that the ZTA/APM appliance meets its published throughput licence capability, remains stable under sustained full-rate load, and preserves service continuity after an HA failover.
 
-## 2. Testing Scope
-1. Sustain 1 Gbps throughput while serving 500 / 1500 concurrent SSLVPN connections on the two target hardware platforms.
-2. Sustain the same load continuously for 1 hour without performance degradation, resource leak, session loss, or abnormal log/alert/warning/error events.
+## 2. Testing Items
+1. Sustain 1 Gbps throughput while serving 500 / 1500 concurrent SSLVPN connections on the two Xinchuang hardware platforms.
+2. Sustain the same load continuously for 1 hour over a single/few concurrent SSLVPN connections without performance degradation, resource leak, session loss, or abnormal alert/warning/error logs.
 3. Preserves service continuity after an HA failover
 
 ## 3. Test environment
@@ -35,13 +35,13 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
 | HW Platform #1 | Hagon CPU 3250 | 64 GB RAM | Kylin | YK-BIG-APM-VE-1G-V23 |
 | HW Platform #2 | Hagon CPU 5280 | 64 GB RAM | Kylin | YK-BIG-APM-VE-5G-V23 |
 
-### 3.2 Software / firmware baseline
+### 3.2 Software / Firmware baseline
 
 | Item | HW Platform #1 | HW Platform #2 |
 |---|---|---|
 | License model & capacity | YK-BIG-APM-VE-1G-V23 | YK-BIG-APM-VE-5G-V23 |
-| ZTA/APM software | _record_ | _record_ |
-| Kylin OS version | _record_ | _record_ |
+| ZTA/APM software |  | _record_ |
+| Kylin OS version |  |  |
 | NIC model / driver / firmware | _record_ | _record_ |
 | CPU cores / threads, CPU governor | _record_ | _record_ |
 
