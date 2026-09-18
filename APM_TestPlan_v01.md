@@ -45,12 +45,14 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
 | NIC model / driver / firmware |  |  |
 | CPU Model / Cores / Threads |  |  |
 
-### 3.3 Test Tools
+### 3.3 Test Tools & Environment
 
 | Items | Description | Purpose |
 |---|---|---|
+| Linux with docker engine | For SSLVPN client simulator |  |
 | SSLVPN client simulator | Generator capable of establishing SSLVPN tunnels | Build 500 / 1500 concurrent tunnels |
-| Traffic generator | iperf3 (multi-stream) or HTTP load tool | Generate 1 Gbps payload through the tunnels |
+| Linux Client | iperf3 or HTTP load tool | Generate 1 Gbps payload through a SSLVPN tunnel |
+| Linux Server | iperf3 or HTTP load tool | Generate 1 Gbps payload through a SSLVPN tunnel |
 
 ## 4. High level topology
 
@@ -62,13 +64,13 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
  │                       │   │  HW #1: Hygon 3250    │   │                          │
  │                       ┼───┤                       ├───┼                          │
  │                       │   │  HW #2: Hagon 5280    │   │                          │
- │  Client               │   │                       │   │  Backend Server.         │
+ │  Client               │   │                       │   │  Backend Server          │
  │  (iPerf)              │   │                       │   │  (iperf)                 │
  │                       │   │                       │   │                          │
  └───────────────────────┘   └───────────────────────┘   └──────────────────────────┘
         │                                                          │
-        └──────────── SSLVPN tunnels (TLS) ────────────────────────┘
-                   payload target: 1 Gbps aggregate
+        └────────────────────── SSLVPN tunnels (TLS) ──────────────┘
+                 payload target: 1 Gbps aggregate
 ```
 
 ## 5. Test items
