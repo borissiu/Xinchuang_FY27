@@ -19,12 +19,12 @@
 
 ## 1. Purpose
 
-Verify that the ZTA/APM appliance meets its published throughput licence capability, remains stable under sustained full-rate load, and preserves service continuity after an HA failover.
+Verify that the ZTA/APM appliance meets its **published throughput licence capability**, **remains stable under sustained full-rate load**, and **preserves service continuity after an HA failover**.
 
 ## 2. Testing Items
-1. Sustain 1 Gbps throughput while serving 500 / 1500 concurrent SSLVPN connections.
-2. Sustain the same load continuously for 1 hour over a single/few concurrent SSLVPN connections.
-3. Preserves service continuity after an HA failover.
+1. Sustain **1 Gbps throughput** while serving **500 / 1500 concurrent SSLVPN connections**.
+2. Sustain the same **load continuously for 1 hour** over a single/few concurrent SSLVPN connections.
+3. Preserves service continuity after an **HA failover**.
 
 ## 3. Test environment
 
@@ -32,14 +32,14 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
 
 | ID | CPU | Memory | OS | ZTA/APM license | 
 |---|---|---|---|---|
-| HW Platform #1 | Hagon CPU 3250 | 64 GB RAM | Kylin | YK-BIG-APM-VE-1G-V23 |
-| HW Platform #2 | Hagon CPU 5280 | 64 GB RAM | Kylin | YK-BIG-APM-VE-5G-V23 |
+| HW Platform #1 | Hagon **CPU 3250** | 64 GB RAM | Kylin | YK-BIG-APM-VE-**1G**-V23 |
+| HW Platform #2 | Hagon **CPU 5280** | 64 GB RAM | Kylin | YK-BIG-APM-VE-**5G**-V23 |
 
 ### 3.2 Software / Firmware baseline
 
 | Item | HW Platform #1 | HW Platform #2 |
 |---|---|---|
-| License model & capacity | YK-BIG-APM-VE-1G-V23 | YK-BIG-APM-VE-5G-V23 |
+| License model & capacity | YK-BIG-APM-VE-**1G**-V23 | YK-BIG-APM-VE-**5G**-V23 |
 | ZTA/APM software |  |  |
 | Kylin OS version |  |  |
 | NIC model / driver / firmware |  |  |
@@ -49,7 +49,7 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
 
 | Items | Description | Purpose |
 |---|---|---|
-| Linux with docker engine | For SSLVPN client simulator |  |
+| Linux with docker | For SSLVPN client simulator |  |
 | SSLVPN client simulator | Generator capable of establishing SSLVPN tunnels | Build 500 / 1500 concurrent tunnels |
 | Linux Client | iperf3 or HTTP load tool | Generate 1 Gbps payload through a SSLVPN tunnel |
 | Linux Server | iperf3 or HTTP load tool | Generate 1 Gbps payload through a SSLVPN tunnel |
