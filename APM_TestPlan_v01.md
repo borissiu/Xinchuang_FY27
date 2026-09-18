@@ -40,7 +40,7 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 | Item | HW Platform #1 | HW Platform #2 |
 |---|---|---|
 | License model & capacity | YK-BIG-APM-VE-**1G**-V23 | YK-BIG-APM-VE-**5G**-V23 |
-| ZTA/APM software |  |  |
+| ZTA/APM software version |  |  |
 | Kylin OS version |  |  |
 | NIC model / driver / firmware |  |  |
 | CPU Model / Cores / Threads |  |  |
