@@ -110,9 +110,10 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
 
 ### 6.4 Log / alert / warning / error record
 
-| # | Timestamp | Platform / Test ID | Source (system / SSLVPN / kernel) | Severity | Message | Impact assessment | Disposition (accept / defect ID) |
-|---|---|---|---|---|---|---|---|
-| 1 | | | | | | | |
+| # | Timestamp | Test ID | Source (System / SSLVPN / Kernel) | Severity | Message |
+|---|---|---|---|---|---|
+| 1 | | | | | |
+| 2 | | | | | |
 
 ## 7. Sign-off
 
