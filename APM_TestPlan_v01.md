@@ -95,33 +95,26 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
 | TP-02 | #2 | 500 CCU | | | | | | | | | |
 | TP-03 | #2 | 1500 CCU | | | | | | | | | |
 
-### 8.3 Stability test results (1 hour) — per test case
+### 6.2 Stability test results (1 hour)
 
-| Elapsed | Sessions | Throughput (Gbps) | CPU (%) | Memory (GB / %) | Load avg | Drops / errors | Log events |
+| Test ID | Platform | Sessions | Throughput | CPU avg (%) | Memory (%) | Log events | Result |
 |---|---|---|---|---|---|---|---|
-| 00:00 (baseline, idle) | 0 | 0 | | | | | |
-| 00:10 | | | | | | | |
-| 00:20 | | | | | | | |
-| 00:30 | | | | | | | |
-| 00:40 | | | | | | | |
-| 00:50 | | | | | | | |
-| 01:00 | | | | | | | |
-| Post-run idle (+5 min) | 0 | 0 | | | | | |
-| **Avg / Peak** | | | | | | | |
+| ST-01 | #1 | 500 CCU | | | | | | | | | |
+| ST-02 | #2 | 500 CCU | | | | | | | | | |
+| ST-03 | #2 | 1500 CCU | | | | | | | | | |
 
-### 8.4 Log / alert / warning / error record
+### 6.3 HA Failover test results
+| Test ID | Platform | Log events | Result |
+|---|---|---|---|
+| HA-01 | #1, #2 | | |
+
+### 6.4 Log / alert / warning / error record
 
 | # | Timestamp | Platform / Test ID | Source (system / SSLVPN / kernel) | Severity | Message | Impact assessment | Disposition (accept / defect ID) |
 |---|---|---|---|---|---|---|---|
 | 1 | | | | | | | |
 
-### 8.5 Defect summary
-
-| Defect ID | Test ID | Severity | Description | Status |
-|---|---|---|---|---|
-| | | | | |
-
-## 12. Sign-off
+## 7. Sign-off
 
 | Role | Name | Signature | Date |
 |---|---|---|---|
