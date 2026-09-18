@@ -99,16 +99,16 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 
 ### 6.2 Stability test results (1 hour)
 
-| Test ID | Platform | Sessions | Throughput | CPU avg (%) | Memory (%) | Log events | Result |
-|---|---|---|---|---|---|---|---|
-| ST-01 | #1 | 500 CCU | | | | | | | | | |
-| ST-02 | #2 | 500 CCU | | | | | | | | | |
-| ST-03 | #2 | 1500 CCU | | | | | | | | | |
+| Test ID | Platform | Sessions | Throughput | CPU avg (%) | Memory (%) | Result |
+|---|---|---|---|---|---|---|
+| ST-01 | #1 | 500 CCU | | | | | | | | |
+| ST-02 | #2 | 500 CCU | | | | | | | | |
+| ST-03 | #2 | 1500 CCU | | | | | | | | |
 
 ### 6.3 HA Failover test results
-| Test ID | Platform | Log events | Result |
-|---|---|---|---|
-| HA-01 | #1, #2 | | |
+| Test ID | Platform | Result |
+|---|---|---|
+| HA-01 | #1, #2 | |
 
 ### 6.4 Log / alert / warning / error record
 
