@@ -50,7 +50,7 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
 | Items | Description | Purpose |
 |---|---|---|
 | SSLVPN client simulator | Generator capable of establishing SSLVPN tunnels | Build 500 / 1500 concurrent tunnels |
-| Traffic generator / SSLVPN Clients & Backend server(s) | iperf3 (multi-stream) or HTTP load tool | Generate 1 Gbps payload through the tunnels |
+| Traffic generator | iperf3 (multi-stream) or HTTP load tool | Generate 1 Gbps payload through the tunnels |
 
 ## 4. High level topology
 
