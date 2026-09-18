@@ -77,13 +77,13 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
 
 | Test ID | Category | Platform | Concurrent SSLVPN | Target throughput | Duration |
 |---|---|---|---|---|---|
-| TP-01 | Throughput | HW Platform #1 (Hagon 3250 / YK-BIG-APM-VE-1G-V23) | 500 | 1 Gbps | 5 min steady |
-| TP-02 | Throughput | HW Platform #2 (Hagon 5280 / YK-BIG-APM-VE-5G-V23) | 500 | 1 Gbps | 5 min steady |
-| TP-03 | Throughput | HW Platform #2 (Hagon 5280 / YK-BIG-APM-VE-5G-V23) | 1500 | 1 Gbps | 5 min steady |
+| TP-01 | Throughput | HW Platform #1 (Hagon 3250 / YK-BIG-APM-VE-1G-V23) | 500 | 1 Gbps | 5 min |
+| TP-02 | Throughput | HW Platform #2 (Hagon 5280 / YK-BIG-APM-VE-5G-V23) | 500 | 1 Gbps | 5 min |
+| TP-03 | Throughput | HW Platform #2 (Hagon 5280 / YK-BIG-APM-VE-5G-V23) | 1500 | 1 Gbps | 5 min |
 | ST-01 | Stability | HW Platform #1 (Hagon 3250 / YK-BIG-APM-VE-1G-V23) | 500 | 1 Gbps | 60 min |
 | ST-02 | Stability | HW Platform #2 (Hagon 5280 / YK-BIG-APM-VE-5G-V23) | 500 | 1 Gbps | 60 min |
 | ST-03 | Stability | HW Platform #2  (Hagon 5280 / YK-BIG-APM-VE-5G-V23)| 1500 | 1 Gbps | 60 min |
-| HA-01 | HA Failover | HW Platform #1,#2  | 500 | 1 Gbps | 5 min steady |
+| HA-01 | HA Failover | HW Platform #1,#2  | 500 | 1 Gbps | 5 min |
 
 ## 6. Result record templates
 
