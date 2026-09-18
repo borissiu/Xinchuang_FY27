@@ -22,9 +22,9 @@
 Verify that the ZTA/APM appliance meets its published throughput licence capability, remains stable under sustained full-rate load, and preserves service continuity after an HA failover.
 
 ## 2. Testing Items
-1. Sustain 1 Gbps throughput while serving 500 / 1500 concurrent SSLVPN connections.
-2. Sustain the same load continuously for 1 hour over a single/few concurrent SSLVPN connections.
-3. Preserves service continuity after an HA failover.
++ Sustain 1 Gbps throughput while serving 500 / 1500 concurrent SSLVPN connections.
++ Sustain the same load continuously for 1 hour over a single/few concurrent SSLVPN connections.
++ Preserves service continuity after an HA failover.
 
 ## 3. Test environment
 
