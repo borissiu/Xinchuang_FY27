@@ -70,7 +70,7 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
  └───────────────────────┘   └───────────────────────┘   └──────────────────────────┘
         │                                                          │
         └────────────────────── SSLVPN tunnels (TLS) ──────────────┘
-                 payload target: 1 Gbps aggregate
+                                  1 Gbps aggregate
 ```
 
 ## 5. Test items
