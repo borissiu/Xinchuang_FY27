@@ -22,9 +22,9 @@
 Verify that the ZTA/APM appliance meets its published throughput licence capability, remains stable under sustained full-rate load, and preserves service continuity after an HA failover.
 
 ## 2. Testing Items
-1. Sustain 1 Gbps throughput while serving 500 / 1500 concurrent SSLVPN connections on the two Xinchuang hardware platforms.
-2. Sustain the same load continuously for 1 hour over a single/few concurrent SSLVPN connections without performance degradation, resource leak, session loss, or abnormal alert/warning/error logs.
-3. Preserves service continuity after an HA failover
+1. Sustain 1 Gbps throughput while serving 500 / 1500 concurrent SSLVPN connections.
+2. Sustain the same load continuously for 1 hour over a single/few concurrent SSLVPN connections.
+3. Preserves service continuity after an HA failover.
 
 ## 3. Test environment
 
@@ -56,14 +56,14 @@ Verify that the ZTA/APM appliance meets its published throughput licence capabil
 
 ```
  ┌───────────────────────┐   ┌───────────────────────┐   ┌──────────────────────────┐
- │  SSLVPN Client        │   │  DUT: ZTA/APM.        │   │  Backend Server.         │
- │  Load Generator       │   │  OS: Kylin            │   │  (iperf3 / HTTP server)  │
+ │  SSLVPN Client        │   │  DUT: ZTA/APM.        │   │                          │
+ │  Load Generator       │   │  OS: Kylin            │   │                          │
  │  500 / 1500 tunnels   │   │                       │   │                          │
  │                       │   │  HW #1: Hygon 3250    │   │                          │
  │                       ┼───┤                       ├───┼                          │
  │                       │   │  HW #2: Hagon 5280    │   │                          │
- │                       │   │                       │   │                          │
- │                       │   │                       │   │                          │
+ │  Client               │   │                       │   │  Backend Server.         │
+ │  (iPerf)              │   │                       │   │  (iperf)                 │
  │                       │   │                       │   │                          │
  └───────────────────────┘   └───────────────────────┘   └──────────────────────────┘
         │                                                          │
