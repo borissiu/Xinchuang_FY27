@@ -1,61 +1,53 @@
-# APM Throughput & Stability Test Plan
+# ZTA/APM Test Plan
 
 | Field | Value |
 |---|---|
-| Document title | APM Throughput and Stability Test Plan (SSLVPN Concurrency) |
+| Document title | ZTA/APM Throughput and Stability Test Plan (SSLVPN Concurrency) |
 | Version | 1.0 (Draft) |
 | Date | 2026-09-17 |
-| Product under test | APM (SSLVPN gateway appliance) |
 | Operating system | Kylin OS |
-| Prepared by | _TBD_ |
-| Reviewed / approved by | _TBD_ |
+| SSL Accerlation | No |
+| Xinchuang HW Platform | Hygon CPU |
 
 ### Revision history
 
 | Version | Date | Author | Description |
 |---|---|---|---|
-| 1.0 | 2026-09-17 | _TBD_ | Initial draft |
+| 1.0 | 2026-09-17 | Boris | Initial draft |
 
 ---
 
 ## 1. Purpose
 
-Verify that the APM appliance can:
+Verify that the ZTA/APM appliance meets its published throughput licence capability, remains stable under sustained full-rate load, and preserves service continuity after an HA failover.
 
 1. Sustain **1 Gbps throughput** while serving **500 / 1500 concurrent SSLVPN connections** on the two target hardware platforms.
 2. Sustain the same load **continuously for 1 hour** without performance degradation, resource leak, session loss, or abnormal log/alert/warning/error events.
+3. Preserves service continuity after an HA failover
 
-CPU loading and memory usage are recorded for every test case, and the system/appliance logs are inspected for alerts, warnings and errors.
+Details information, including CPU loading and Memory usage are recorded for every test case, and the system/appliance logs are inspected for alerts, warnings and errors.
 
 ## 2. Scope
 
-| In scope | Out of scope |
-|---|---|
-| SSLVPN data-plane throughput at target concurrency | Functional/feature testing of APM policies beyond what is needed to establish tunnels |
-| 1-hour stability (soak) run at target load | Long-duration soak (>1 hour, e.g. 24h/72h) |
-| CPU and memory resource monitoring | HA / failover, clustering |
-| Log, alert, warning and error inspection | Security/penetration testing, certificate/crypto conformance |
-| Kylin OS on the two specified HW platforms | Any other OS or HW platform |
 
 ## 3. Test environment
 
 ### 3.1 Device under test (DUT)
 
-| ID | CPU | Memory | APM model / license | OS |
+| ID | CPU | Memory | OS | ZTA/APM license | 
 |---|---|---|---|---|
-| HW Platform #1 | Hagon CPU 3250 | 64 GB RAM | YK-BIG-APM-VE-1G-V23 | Kylin |
-| HW Platform #2 | Hagon CPU 5280 | 64 GB RAM | YK-BIG-APM-VE-5G-V23 | Kylin |
+| HW Platform #1 | Hagon CPU 3250 | 64 GB RAM | Kylin | YK-BIG-APM-VE-1G-V23 |
+| HW Platform #2 | Hagon CPU 5280 | 64 GB RAM | Kylin | YK-BIG-APM-VE-5G-V23 |
 
-### 3.2 Software / firmware baseline (to be recorded before test start)
+### 3.2 Software / firmware baseline
 
 | Item | HW Platform #1 | HW Platform #2 |
 |---|---|---|
-| Kylin OS version (`cat /etc/kylin-release`, `uname -a`) | _record_ | _record_ |
-| APM software / build version | _record_ | _record_ |
 | License model & capacity | YK-BIG-APM-VE-1G-V23 | YK-BIG-APM-VE-5G-V23 |
+| ZTA/APM software | _record_ | _record_ |
+| Kylin OS version | _record_ | _record_ |
 | NIC model / driver / firmware | _record_ | _record_ |
 | CPU cores / threads, CPU governor | _record_ | _record_ |
-| Interface link speed & MTU | _record_ | _record_ |
 
 ### 3.3 Supporting equipment
 
