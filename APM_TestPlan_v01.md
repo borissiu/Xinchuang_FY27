@@ -77,15 +77,15 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 
 ### 5.1 Test case summary
 
-| Test ID | Category | Platform | Concurrent SSLVPN | Target throughput | Duration |
+| Test ID | Category | HW Platform | Concurrent SSLVPN | Target throughput | Duration |
 |---|---|---|---|---|---|
-| TP-01 | Throughput | HW Platform #1 (Hygon 3250 / YK-APM-VE-1G-V23) | 500 | 1 Gbps | 5 min |
-| TP-02 | Throughput | HW Platform #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 500 | 1 Gbps | 5 min |
-| TP-03 | Throughput | HW Platform #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 1500 | 1 Gbps | 5 min |
-| ST-01 | Stability | HW Platform #1 (Hygon 3250 / YK-APM-VE-1G-V23) | 500 | 1 Gbps | 60 min |
-| ST-02 | Stability | HW Platform #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 500 | 1 Gbps | 60 min |
-| ST-03 | Stability | HW Platform #2  (Hygon 5280 / YK-APM-VE-5G-V23)| 1500 | 1 Gbps | 60 min |
-| HA-01 | HA Failover | HW Platform #1,#2  | 500 | 1 Gbps | 5 min |
+| TP-01 | Throughput | HW #1 (Hygon 3250 / YK-APM-VE-1G-V23) | 500 | 1 Gbps | 5 min |
+| TP-02 | Throughput | HW #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 500 | 1 Gbps | 5 min |
+| TP-03 | Throughput | HW #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 1500 | 1 Gbps | 5 min |
+| ST-01 | Stability | HW #1 (Hygon 3250 / YK-APM-VE-1G-V23) | 500 | 1 Gbps | 60 min |
+| ST-02 | Stability | HW #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 500 | 1 Gbps | 60 min |
+| ST-03 | Stability | HW #2  (Hygon 5280 / YK-APM-VE-5G-V23)| 1500 | 1 Gbps | 60 min |
+| HA-01 | HA Failover | HW #1,#2  | 500 | 1 Gbps | 5 min |
 
 ## 6. Result record templates
 
