@@ -147,8 +147,6 @@ Decompress & Import yunke-ccu-v6.tar.
 > + ```decompress yunke-ccu-v6.tar.zip```
 > + ```docker load –input yunke-ccu-v6.tar```
 
-Create a SSLVPN account on Yunke device
-
 Create a Virtual-Server “https://192.168.100.200” for SSLVPN testing.
 > + ```The container image hardcoded with this IP and VPN credential (username/password = yunke)```
 
