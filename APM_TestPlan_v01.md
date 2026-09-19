@@ -150,7 +150,7 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 ```watch tmsh show apm license```
 
 + SSH to Yunke device and keep monitoring /var/log/apm
-```tail -f /var/log/apm | egrep -i ‘license’```
+```tail -f /var/log/apm | egrep -i 'license'```
 
 + Remove all containers which created by previous test
 ```docker container prune```
