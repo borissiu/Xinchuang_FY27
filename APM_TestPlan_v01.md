@@ -21,9 +21,9 @@
 ## 1. Purpose
 
 Verify that the ZTA/APM appliance meets its 
-+ **published throughput licence capability**, 
-+ **remains stable under sustained full-rate load**, and 
-+ **preserves service continuity after an HA failover**.
+1. **published throughput licence capability**,
+2. **remains stable under sustained full-rate load**, and
+3. **preserves service continuity after an HA failover**.
 
 ## 2. Testing Items
 1. Sustain **1 Gbps throughput** while serving **500 / 1500 concurrent SSLVPN connections**.
