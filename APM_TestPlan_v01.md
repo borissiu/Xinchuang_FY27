@@ -134,26 +134,26 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 + Create a Linux Virtual Machine.
 + ```I used Ubuntu-24.04-live-server-amd64.iso image```
 
-+ Install Docker on the Linux Virtual Machine. 
-```https://docs.docker.com/engine/install/```
++ Install Docker on the Linux Virtual Machine.
++ ```https://docs.docker.com/engine/install/```
 
-+ Decompress & Import yunke-ccu-v6.tar. 
-```decompress yunke-ccu-v6.tar.zip```
-```docker load –input yunke-ccu-v6.tar```
++ Decompress & Import yunke-ccu-v6.tar.
++ ```decompress yunke-ccu-v6.tar.zip```
++ ```docker load –input yunke-ccu-v6.tar```
 
 + Create a SSLVPN account on Yunke device
 
-+ Create a Virtual-Server “https://192.168.100.200” for SSLVPN testing. 
-```The container image hardcoded with this IP and VPN credential (username/password = yunke)```
++ Create a Virtual-Server “https://192.168.100.200” for SSLVPN testing.
++ ```The container image hardcoded with this IP and VPN credential (username/password = yunke)```
 
-+ SSH to Yunke device and keep monitoring VPN connection status. 
-```watch tmsh show apm license```
++ SSH to Yunke device and keep monitoring VPN connection status.
++ ```watch tmsh show apm license```
 
-+ SSH to Yunke device and keep monitoring /var/log/apm. 
-```tail -f /var/log/apm | egrep -i 'license'```
++ SSH to Yunke device and keep monitoring /var/log/apm.
++ ```tail -f /var/log/apm | egrep -i 'license'```
 
 + Remove all containers which created by previous test. 
 ```docker container prune```
 
-+ Start testing by spin up 600+ containers. 
-```for i in {1..600}; do echo "### $i ###"; docker run -it yunke-ccu:v6; done```
++ Start testing by spin up 600+ containers.
++ ```for i in {1..600}; do echo "### $i ###"; docker run -it yunke-ccu:v6; done```
