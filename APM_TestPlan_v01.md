@@ -3,8 +3,8 @@
 |  |  |
 |---|---|
 | Document title | ZTA/APM Throughput and Stability Test Plan |
-| Version | 1.0 (Draft) |
-| Date | 2026-09-17 |
+| Version | 1.1 |
+| Date | 2026-09-19 |
 | Operating system | **Kylin OS** |
 | SSL Accerlation | **No** |
 | HW Platform | Xinchuang Hygon CPU |
@@ -13,7 +13,8 @@
 
 | Version | Date | Author | Description |
 |---|---|---|---|
-| 1.0 | 2026-09-17 | Boris | Initial draft |
+| 1.0 | 2026-09-17 | Boris | 1st draft |
+| 1.1 | 2026-09-19 | Boris | 2nd draft |
 
 ---
 
