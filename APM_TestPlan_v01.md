@@ -58,14 +58,15 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 
 ```
  ┌───────────────────────┐   ┌───────────────────────┐   ┌──────────────────────────┐
- │  SSLVPN Client        │   │  DUT: ZTA/APM.        │   │                          │
- │  Load Generator       │   │  OS: Kylin            │   │                          │
- │  500 / 1500 tunnels   │   │                       │   │                          │
- │                       │   │  HW #1: Hygon 3250    │   │                          │
- │                       ┼───┤                       ├───┼                          │
- │                       │   │  HW #2: Hygon 5280    │   │                          │
- │  Client               │   │                       │   │  Backend Server          │
- │  (iPerf)              │   │                       │   │  (iperf)                 │
+ │ Container Based       │   │                       │   │                          │
+ │ SSLVPN Conn Generator ┼───┤  DUT: ZTA/APM         │   │                          │
+ │ 500 / 1500 tunnels    │   │  OS: Kylin            │   │                          │
+ ┌───────────────────────┐   │                       │   │                          │
+ │ Linux with Docker     │   │  HW #1: Hygon 3250    │   │                          │
+ └───────────────────────┘   │                       ├───┼                          │
+ ┌───────────────────────┐   │  HW #2: Hygon 5280    │   │                          │
+ │ Linux Client(s)       │   │                       │   │  Backend Server(s)       │
+ │ (iPerf)               ┼───┤                       │   │  (iperf)                 │
  │                       │   │                       │   │                          │
  └───────────────────────┘   └───────────────────────┘   └──────────────────────────┘
         │                                                          │
