@@ -137,29 +137,29 @@ Video demo “Yunke-CCU-Test_v1.mp4”
 Download “yunke-ccu-v6.tar.zip” image to your docker machine
 > + ```https://fileupload.f5xc.website/index.php/s/K1W8BcCDDTj7dz4```
 
-+ Create a Linux Virtual Machine.
+Create a Linux Virtual Machine.
 > + ```I used Ubuntu-24.04-live-server-amd64.iso image```
 
-+ Install Docker on the Linux Virtual Machine.
+Install Docker on the Linux Virtual Machine.
 > + ```https://docs.docker.com/engine/install/```
 
-+ Decompress & Import yunke-ccu-v6.tar.
+Decompress & Import yunke-ccu-v6.tar.
 > + ```decompress yunke-ccu-v6.tar.zip```
 > + ```docker load –input yunke-ccu-v6.tar```
 
-+ Create a SSLVPN account on Yunke device
+Create a SSLVPN account on Yunke device
 
-+ Create a Virtual-Server “https://192.168.100.200” for SSLVPN testing.
+Create a Virtual-Server “https://192.168.100.200” for SSLVPN testing.
 > + ```The container image hardcoded with this IP and VPN credential (username/password = yunke)```
 
-+ SSH to Yunke device and keep monitoring VPN connection status.
+SSH to Yunke device and keep monitoring VPN connection status.
 > + ```watch tmsh show apm license```
 
-+ SSH to Yunke device and keep monitoring /var/log/apm.
+SSH to Yunke device and keep monitoring /var/log/apm.
 > + ```tail -f /var/log/apm | egrep -i 'license'```
 
-+ Remove all containers which created by previous test. 
+Remove all containers which created by previous test. 
 > + ```docker container prune```
 
-+ Start testing by spin up 505+ containers.
+Start testing by spin up 505+ containers.
 > + ```for i in {1..505}; do echo "### $i ###"; docker run -it yunke-ccu:v6; done```
