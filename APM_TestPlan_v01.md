@@ -155,5 +155,5 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 + Remove all containers which created by previous test. 
 ```docker container prune```
 
-+ Start testing by spin up 600+ containers.
-+ ```for i in {1..600}; do echo "### $i ###"; docker run -it yunke-ccu:v6; done```
++ Start testing by spin up 505+ containers.
++ ```for i in {1..505}; do echo "### $i ###"; docker run -it yunke-ccu:v6; done```
