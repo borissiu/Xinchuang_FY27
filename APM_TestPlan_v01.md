@@ -14,7 +14,7 @@
 | Version | Date | Author | Description |
 |---|---|---|---|
 | 1.0 | 2026-09-17 | Boris | 1st draft |
-| 1.1 | 2026-09-19 | Boris | 2nd draft |
+| 1.1 | 2026-09-19 | Boris | Final |
 
 ---
 
