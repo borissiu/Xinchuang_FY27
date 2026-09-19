@@ -132,7 +132,7 @@ Verify that the ZTA/APM appliance meets its
 
 ## 8. CCU Simulator
 + Video demo “Yunke-CCU-Test_v1.mp4”
-+ ```https://fileupload.f5xc.website/index.php/s/vK2HblXM3FRHBMp```
+<Tabs> + ```https://fileupload.f5xc.website/index.php/s/vK2HblXM3FRHBMp```
 
 + Download “yunke-ccu-v6.tar.zip” image to your docker machine
 + ```https://fileupload.f5xc.website/index.php/s/K1W8BcCDDTj7dz4```
