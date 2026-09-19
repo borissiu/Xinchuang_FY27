@@ -143,9 +143,9 @@ docker load –input yunke-ccu-v6.tar
 ```
  
 + Create a SSLVPN account on Yunke device
-+ create a Virtual-Server “https://192.168.100.200” for SSLVPN testing (The SSLVPN script is hardcode with this IP)
- + username/password = yunke
- + the container image hardcoded the above IP and VPN credential
++ Create a Virtual-Server “https://192.168.100.200” for SSLVPN testing (The SSLVPN script is hardcode with this IP)
++ username/password = yunke
++ the container image hardcoded the above IP and VPN credential
  
 + SSH to Yunke device and keep monitoring VPN connection status
 ```watch tmsh show apm license```
