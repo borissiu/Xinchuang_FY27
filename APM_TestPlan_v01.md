@@ -125,7 +125,6 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 | Test engineer | | | |
 | Test lead / QA | | | |
 | Product owner | | | |
-````
 
 ## 8. CCU Simulator
 + Download “Yunke-CCU-Test_v1.mp4” video demo
