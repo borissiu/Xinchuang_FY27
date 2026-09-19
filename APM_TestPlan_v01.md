@@ -32,14 +32,14 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 
 | ID | CPU | Memory | OS | ZTA/APM license | 
 |---|---|---|---|---|
-| HW Platform #1 | Hagon **CPU 3250** | 64 GB RAM | Kylin | YK-BIG-APM-VE-**1G**-V23 |
-| HW Platform #2 | Hagon **CPU 5280** | 64 GB RAM | Kylin | YK-BIG-APM-VE-**5G**-V23 |
+| HW Platform #1 | Hygon **CPU 3250** | 64 GB RAM | Kylin | YK-APM-VE-**1G**-V23 |
+| HW Platform #2 | Hygon **CPU 5280** | 64 GB RAM | Kylin | YK-APM-VE-**5G**-V23 |
 
 ### 3.2 Software / Firmware baseline
 
 | Item | HW Platform #1 | HW Platform #2 |
 |---|---|---|
-| License model & capacity | YK-BIG-APM-VE-**1G**-V23 | YK-BIG-APM-VE-**5G**-V23 |
+| License model & capacity | YK-APM-VE-**1G**-V23 | YK-APM-VE-**5G**-V23 |
 | ZTA/APM software version |  |  |
 | Kylin OS version |  |  |
 | NIC model / driver / firmware |  |  |
@@ -63,7 +63,7 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
  │  500 / 1500 tunnels   │   │                       │   │                          │
  │                       │   │  HW #1: Hygon 3250    │   │                          │
  │                       ┼───┤                       ├───┼                          │
- │                       │   │  HW #2: Hagon 5280    │   │                          │
+ │                       │   │  HW #2: Hygon 5280    │   │                          │
  │  Client               │   │                       │   │  Backend Server          │
  │  (iPerf)              │   │                       │   │  (iperf)                 │
  │                       │   │                       │   │                          │
@@ -79,12 +79,12 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 
 | Test ID | Category | Platform | Concurrent SSLVPN | Target throughput | Duration |
 |---|---|---|---|---|---|
-| TP-01 | Throughput | HW Platform #1 (Hagon 3250 / YK-BIG-APM-VE-1G-V23) | 500 | 1 Gbps | 5 min |
-| TP-02 | Throughput | HW Platform #2 (Hagon 5280 / YK-BIG-APM-VE-5G-V23) | 500 | 1 Gbps | 5 min |
-| TP-03 | Throughput | HW Platform #2 (Hagon 5280 / YK-BIG-APM-VE-5G-V23) | 1500 | 1 Gbps | 5 min |
-| ST-01 | Stability | HW Platform #1 (Hagon 3250 / YK-BIG-APM-VE-1G-V23) | 500 | 1 Gbps | 60 min |
-| ST-02 | Stability | HW Platform #2 (Hagon 5280 / YK-BIG-APM-VE-5G-V23) | 500 | 1 Gbps | 60 min |
-| ST-03 | Stability | HW Platform #2  (Hagon 5280 / YK-BIG-APM-VE-5G-V23)| 1500 | 1 Gbps | 60 min |
+| TP-01 | Throughput | HW Platform #1 (Hygon 3250 / YK-APM-VE-1G-V23) | 500 | 1 Gbps | 5 min |
+| TP-02 | Throughput | HW Platform #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 500 | 1 Gbps | 5 min |
+| TP-03 | Throughput | HW Platform #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 1500 | 1 Gbps | 5 min |
+| ST-01 | Stability | HW Platform #1 (Hygon 3250 / YK-APM-VE-1G-V23) | 500 | 1 Gbps | 60 min |
+| ST-02 | Stability | HW Platform #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 500 | 1 Gbps | 60 min |
+| ST-03 | Stability | HW Platform #2  (Hygon 5280 / YK-APM-VE-5G-V23)| 1500 | 1 Gbps | 60 min |
 | HA-01 | HA Failover | HW Platform #1,#2  | 500 | 1 Gbps | 5 min |
 
 ## 6. Result record templates
