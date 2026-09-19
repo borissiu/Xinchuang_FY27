@@ -137,10 +137,8 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 &emsp;+ https://docs.docker.com/engine/install/
 
 + Decompress & Import yunke-ccu-v6.tar
-```
-decompress yunke-ccu-v6.tar.zip
-docker load –input yunke-ccu-v6.tar
-```
+```decompress yunke-ccu-v6.tar.zip
+docker load –input yunke-ccu-v6.tar```
  
 + Create a SSLVPN account on Yunke device
 + Create a Virtual-Server “https://192.168.100.200” for SSLVPN testing (The SSLVPN script is hardcode with this IP)
