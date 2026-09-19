@@ -130,11 +130,14 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 + Video demo “Yunke-CCU-Test_v1.mp4”
 + Download “yunke-ccu-v6.tar.zip” image to your docker machine
 + Create a Linux Virtual Machine
+
 &emsp;+ I used Ubuntu-24.04-live-server-amd64.iso image
 + Install Docker on the Linux Virtual Machine
+
 &emsp;+ https://docs.docker.com/engine/install/
+
 + Decompress & Import yunke-ccu-v6.tar
-&emsp;```
+```
 decompress yunke-ccu-v6.tar.zip
 docker load –input yunke-ccu-v6.tar
 ```
