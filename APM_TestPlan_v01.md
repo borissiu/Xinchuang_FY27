@@ -137,9 +137,8 @@ Verify that the ZTA/APM appliance meets its **published throughput licence capab
 ```decompress yunke-ccu-v6.tar.zip```
 ```docker load –input yunke-ccu-v6.tar```
 + Create a SSLVPN account on Yunke device
-+ Create a Virtual-Server “https://192.168.100.200” for SSLVPN testing (The SSLVPN script is hardcode with this IP)
-+ username/password = yunke
-+ the container image hardcoded the above IP and VPN credential
++ Create a Virtual-Server “https://192.168.100.200” for SSLVPN testing ```The SSLVPN script is hardcode with this IP```
+```The container image hardcoded the above IP and VPN credential (username/password = yunke)```
 + SSH to Yunke device and keep monitoring VPN connection status
 ```watch tmsh show apm license```
 + SSH to Yunke device and keep monitoring /var/log/apm
