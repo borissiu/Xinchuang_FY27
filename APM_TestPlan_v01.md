@@ -138,7 +138,7 @@ Download “yunke-ccu-v6.tar.zip” image to your docker machine
 > + ```https://fileupload.f5xc.website/index.php/s/K1W8BcCDDTj7dz4```
 
 Create a Linux Virtual Machine.
-> + ```I used Ubuntu-24.04-live-server-amd64.iso image```
+> + ```e.g. Ubuntu-24.04-live-server-amd64.iso image```
 
 Install Docker on the Linux Virtual Machine.
 > + ```https://docs.docker.com/engine/install/```
