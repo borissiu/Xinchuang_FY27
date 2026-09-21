@@ -55,8 +55,8 @@ Verify that the ZTA/APM appliance meets its
 |---|---|---|
 | Linux with docker | For SSLVPN client simulator |  |
 | SSLVPN client simulator | Generator capable of establishing SSLVPN tunnels | Build 500 / 1500 concurrent tunnels |
-| Linux Client | iperf3 or HTTP load tool | Generate 1 Gbps payload through a SSLVPN tunnel |
-| Linux Server | iperf3 or HTTP load tool | Generate 1 Gbps payload through a SSLVPN tunnel |
+| Linux Client | iperf3 or HTTP load tool | Generate 1/3/5 Gbps payload through a SSLVPN tunnel |
+| Linux Server | iperf3 or HTTP load tool | Generate 1/3/5 Gbps payload through a SSLVPN tunnel |
 
 ## 4. High level topology
 
