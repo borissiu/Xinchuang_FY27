@@ -17,3 +17,6 @@ Module 1 – All sections
     The F1 score
     Testing for the F1 score
 
+The orchestrator replies to the user.
+
+../../../_images/inline.PNG
