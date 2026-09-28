@@ -96,7 +96,7 @@ Verify that the ZTA/APM appliance meets its
 
 ### 6.1 Throughput test results
 
-| Test ID | HW Platform | Sessions Established | Avg Throughput (Gbps) | Peak Throughput (Gbps) | Ctrl CPU Avg (%) | Ctrl CPU Peak (%) | System CPU Avg (%) | System CPU Peak (%) | Mem Avg (%) | Mem Peak (%) | Result |
+| Test ID | HW Platform | Sessions Established | Avg Throughput (Gbps) | Peak Throughput (Gbps) | Ctrl CPU Avg (%) | Ctrl CPU Peak (%) | Sys CPU Avg (%) | Sys CPU Peak (%) | Mem Avg (%) | Mem Peak (%) | Result |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | TP-01 | #1 | 500 CCU | | | | | | | | | |
 | TP-02 | #2 | 500 CCU | | | | | | | | | |
@@ -104,7 +104,7 @@ Verify that the ZTA/APM appliance meets its
 
 ### 6.2 Stability test results (1 hour)
 
-| Test ID | Platform | Sessions | Throughput | Ctrl CPU avg (%) | Sysetm CPU avg (%) | Memory (%) | Result |
+| Test ID | Platform | Sessions | Throughput | Ctrl CPU avg (%) | Sys CPU avg (%) | Memory (%) | Result |
 |---|---|---|---|---|---|---|---|
 | ST-01 | #1 | 500 CCU | | | | | | | | | |
 | ST-02 | #2 | 500 CCU | | | | | | | | | |
