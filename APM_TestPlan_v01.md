@@ -96,19 +96,19 @@ Verify that the ZTA/APM appliance meets its
 
 ### 6.1 Throughput test results
 
-| Test ID | HW Platform | Sessions Established | Avg Throughput (Gbps) | Peak Throughput (Gbps) | CPU Avg (%) | CPU Peak (%) | Mem Avg (%) | Mem Peak (%) | Result |
-|---|---|---|---|---|---|---|---|---|---|
-| TP-01 | #1 | 500 CCU | | | | | | | |
-| TP-02 | #2 | 500 CCU | | | | | | | |
-| TP-03 | #2 | 1500 CCU | | | | | | | |
+| Test ID | HW Platform | Sessions Established | Avg Throughput (Gbps) | Peak Throughput (Gbps) | CPU Avg (%) | CPU Peak (%) | System CPU Avg (%) | System CPU Peak (%) | Mem Avg (%) | Mem Peak (%) | Result |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| TP-01 | #1 | 500 CCU | | | | | | | | | |
+| TP-02 | #2 | 500 CCU | | | | | | | | | |
+| TP-03 | #2 | 1500 CCU | | | | | | | | | |
 
 ### 6.2 Stability test results (1 hour)
 
-| Test ID | Platform | Sessions | Throughput | CPU avg (%) | Memory (%) | Result |
-|---|---|---|---|---|---|---|
-| ST-01 | #1 | 500 CCU | | | | | | | | |
-| ST-02 | #2 | 500 CCU | | | | | | | | |
-| ST-03 | #2 | 1500 CCU | | | | | | | | |
+| Test ID | Platform | Sessions | Throughput | CPU avg (%) | Sysetm CPU avg (%) | Memory (%) | Result |
+|---|---|---|---|---|---|---|---|
+| ST-01 | #1 | 500 CCU | | | | | | | | | |
+| ST-02 | #2 | 500 CCU | | | | | | | | | |
+| ST-03 | #2 | 1500 CCU | | | | | | | | | |
 
 ### 6.3 HA Failover test results
 | Test ID | Platform | Result |
