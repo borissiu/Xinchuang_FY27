@@ -41,7 +41,7 @@ Verify that the ZTA/APM appliance meets its
 2. Access Profiles
 > + Configurable Access Policy Timeout, Inactivity Timeout, Maximum Session Timeout
 > + Validate Max. Concurrent Users, Max Sessions Per User
-3. Endpoint Security (Client-Side)
+3. Endpoint Security Check (Client-Side)
 > + Validate Windows Operating systems, e.g. Win10, Win11
 > + Validate Windows firewall enabled
 > + Validate Antivirus Software Check
