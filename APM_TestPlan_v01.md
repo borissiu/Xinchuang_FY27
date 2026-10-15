@@ -32,7 +32,21 @@ Verify that the ZTA/APM appliance meets its
 
 ## 2b. Testing Items - General Use Cases
 1. SSLVPN Active Sessions
-> + Includes Session ID, User Info., IP Info., Start Time and Expiration Time
+> + Real time display, including Session ID, User Info., IP Info., Start Time and Expiration Time
+> + Access Report, including all sessions in last N hours and last N days
+> + URL Request Logs, including Session ID, User Info, IP Info, Destination URL, Action
+> + APM Dashboard
+2. Access Profiles
+> + Configurable Access Policy Timeout, Inactivity Timeout, Maximum Session Timeout
+> + Validate Max. Concurrent Users, Max Sessions Per User
+3. Endpoint Security (Client-Side)
+> + Validate Windows Info
+> + Validate Antivirus Software Check
+> + Validate Machine Info.
+4. Network Settings
+> + SNAT Pool
+> + Full Tunnel
+> + Split Tunnel
 
 ## 3. Test environment
 
