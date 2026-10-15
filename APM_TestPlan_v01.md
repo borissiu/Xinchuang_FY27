@@ -31,7 +31,7 @@ Verify that the ZTA/APM appliance meets its
 3. Preserves service continuity after an **HA failover**.
 
 ## 2b. Testing Items - General Use Cases
-1. SSLVPN Active Sessions
+1. SSLVPN
 > + Support Windows 11/10, MacOS, Linux, iOS and Android
 > + Support user authentication methods, including Radius, AD, LDAP, SecureID
 > + Real time display, including Session ID, User Info., IP Info., Start Time and Expiration Time
