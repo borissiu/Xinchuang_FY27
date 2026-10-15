@@ -88,19 +88,17 @@ Verify that the AWAF appliance meets its
 
 ### 6.1 Throughput test results
 
-| Test ID | HW Platform | Sessions Established | Avg Throughput (Gbps) | Peak Throughput (Gbps) | Ctrl CPU Avg (%) | Ctrl CPU Peak (%) | Sys CPU Avg (%) | Sys CPU Peak (%) | Mem Avg (%) | Mem Peak (%) | Result |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| TP-01 | #1 | 500 CCU | | | | | | | | | |
-| TP-02 | #2 | 500 CCU | | | | | | | | | |
-| TP-03 | #2 | 1500 CCU | | | | | | | | | |
+| Test ID | HW Platform | Avg Throughput (Gbps) | Peak Throughput (Gbps) | Ctrl CPU Avg (%) | Ctrl CPU Peak (%) | Sys CPU Avg (%) | Sys CPU Peak (%) | Mem Avg (%) | Mem Peak (%) | Result |
+|---|---|---|---|---|---|---|---|---|---|---|
+| TP-01 | #1 | | | | | | | | | |
+| TP-02 | #2 | | | | | | | | | |
 
 ### 6.2 Stability test results (1 hour)
 
-| Test ID | Platform | Sessions | Throughput | Ctrl CPU avg (%) | Sys CPU avg (%) | Memory (%) | Result |
-|---|---|---|---|---|---|---|---|
-| ST-01 | #1 | 500 CCU | | | | | | | | | |
-| ST-02 | #2 | 500 CCU | | | | | | | | | |
-| ST-03 | #2 | 1500 CCU | | | | | | | | | |
+| Test ID | Platform | Throughput | Ctrl CPU avg (%) | Sys CPU avg (%) | Memory (%) | Result |
+|---|---|---|---|---|---|---|
+| ST-01 | #1 | | | | | | | | | |
+| ST-02 | #2 | | | | | | | | | |
 
 ### 6.3 HA Failover test results
 | Test ID | Platform | Result |
