@@ -32,6 +32,8 @@ Verify that the ZTA/APM appliance meets its
 
 ## 2b. Testing Items - General Use Cases
 1. SSLVPN Active Sessions
+> + Support Windows 11/10, MacOS, Linux, iOS and Android
+> + Support user authentication methods, including Radius, AD, LDAP, SecureID
 > + Real time display, including Session ID, User Info., IP Info., Start Time and Expiration Time
 > + Access Report, including all sessions in last N hours and last N days
 > + URL Request Logs, including Session ID, User Info, IP Info, Destination URL, Action
@@ -40,11 +42,12 @@ Verify that the ZTA/APM appliance meets its
 > + Configurable Access Policy Timeout, Inactivity Timeout, Maximum Session Timeout
 > + Validate Max. Concurrent Users, Max Sessions Per User
 3. Endpoint Security (Client-Side)
-> + Validate Windows Info
+> + Validate Windows Operating systems, e.g. Win10, Win11
+> + Validate Windows firewall enabled
 > + Validate Antivirus Software Check
 > + Validate Machine Info.
 4. Network Settings
-> + SNAT Pool
+> + Client IP address Pool
 > + Full Tunnel
 > + Split Tunnel
 
