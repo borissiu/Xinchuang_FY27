@@ -56,8 +56,8 @@ Verify that the AWAF appliance meets its
 
 | Items | Description | Purpose |
 |---|---|---|
-| Linux Client | HTTPs load tool or apache benchmark tool (ab) | Generate 1Gbps or 3 Gbps HTTPs payload |
-| Linux Server | HTTPs load tool or apache benchmark tool (ab) | Generate 1Gbps or 3 Gbps HTTPs payload |
+| Test Client | HTTPs load tool or apache benchmark tool (ab) | Generate 1Gbps or 3 Gbps HTTPs payload |
+| Test Server | HTTPs load tool or apache benchmark tool (ab) | Generate 1Gbps or 3 Gbps HTTPs payload |
 
 ## 4. High level topology
 
