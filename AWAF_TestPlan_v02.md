@@ -20,52 +20,34 @@
 
 ## 1. Purpose
 
-Verify that the ZTA/APM appliance meets its 
+Verify that the AWAF appliance meets its 
 1. **published throughput licence capability**,
 2. **remains stable under sustained full-rate load**, and
 3. **preserves service continuity after an HA failover**.
 
 ## 2a. Testing Items - Performance & Stabliity
-1. Sustain **1 Gbps throughput** while serving **500 / 1500 concurrent SSLVPN connections**.
+1. Sustain **1 or 3 Gbps throughput**.
 2. Sustain the same **load continuously for 1 hour** over a single/few concurrent SSLVPN connections.
 3. Preserves service continuity after an **HA failover**.
 
 ## 2b. Testing Items - General Use Cases
-1. SSLVPN
-> + Support Windows 11/10, MacOS, Linux, iOS and Android
-> + Support user authentication methods, including Radius, AD, LDAP, SecureID
-> + Real time display, including Session ID, User Info., IP Info., Start Time and Expiration Time
-> + Access Report, including all sessions in last N hours and last N days
-> + URL Request Logs, including Session ID, User Info, IP Info, Destination URL, Action
-> + APM Dashboard
-2. Access Profiles
-> + Configurable Access Policy Timeout, Inactivity Timeout, Maximum Session Timeout
-> + Validate Max. Concurrent Users, Max Sessions Per User
-3. Endpoint Security Check (Client-Side)
-> + Validate Windows Operating systems, e.g. Win10, Win11
-> + Validate Windows firewall enabled
-> + Validate Antivirus Software Check
-> + Validate Machine Info.
-4. Network Settings
-> + Client IP address Pool
-> + Full Tunnel
-> + Split Tunnel
+
 
 ## 3. Test environment
 
 ### 3.1 Device under test (DUT)
 
-| ID | CPU | Memory | OS | ZTA/APM license | 
+| ID | CPU | Memory | OS | AWAF license | 
 |---|---|---|---|---|
-| HW Platform #1 | Hygon **CPU 3250** | 64 GB RAM | Kylin | YK-APM-VE-**1G**-V23 |
-| HW Platform #2 | Hygon **CPU 5280** | 64 GB RAM | Kylin | YK-APM-VE-**5G**-V23 |
+| HW Platform #1 | Hygon **CPU 3250** | 64 GB RAM | Kylin | YK-BIG-AWF-VE-**1G**-V23 |
+| HW Platform #2 | Hygon **CPU 5280** | 64 GB RAM | Kylin | YK-BIG-AWF-VE-**3G**-V23 |
 
 ### 3.2 Software / Firmware baseline
 
 | Item | HW Platform #1 | HW Platform #2 |
 |---|---|---|
-| License model & capacity | YK-APM-VE-**1G**-V23 | YK-APM-VE-**5G**-V23 |
-| ZTA/APM software version |  |  |
+| License model & capacity | YK-BIG-AWF-VE-**1G**-V23 | YK-BIG-AWF-VE-**3G**-V23 |
+| AWAF software version |  |  |
 | Kylin OS version |  |  |
 | NIC model / driver / firmware |  |  |
 | CPU Model / Cores / Threads |  |  |
