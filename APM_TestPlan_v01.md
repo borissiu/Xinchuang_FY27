@@ -15,6 +15,7 @@
 |---|---|---|---|
 | 1.0 | 2026-09-17 | Boris | 1st draft |
 | 1.1 | 2026-09-19 | Boris | Final |
+| 1.2 | 2026-10-15 | Boris | Add General Use Cases |
 
 ---
 
