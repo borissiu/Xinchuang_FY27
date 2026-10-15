@@ -25,10 +25,14 @@ Verify that the ZTA/APM appliance meets its
 2. **remains stable under sustained full-rate load**, and
 3. **preserves service continuity after an HA failover**.
 
-## 2. Testing Items
+## 2a. Testing Items - Performance & Stabliity
 1. Sustain **1 Gbps throughput** while serving **500 / 1500 concurrent SSLVPN connections**.
 2. Sustain the same **load continuously for 1 hour** over a single/few concurrent SSLVPN connections.
 3. Preserves service continuity after an **HA failover**.
+
+## 2b. Testing Items - General Use Cases
+1. SSLVPN Active Sessions
+> + Includes Session ID, User Info., IP Info., Start Time and Expiration Time
 
 ## 3. Test environment
 
