@@ -77,7 +77,7 @@ Verify that the AWAF appliance meets its
 ### 5.1 Test case summary
 
 | Test ID | Category | HW Platform | Target throughput | Duration |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | TP-01 | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | 1 Gbps | 5 min |
 | TP-02 | Throughput | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | 3 Gbps | 5 min |
 | ST-01 | Stability | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | 1 Gbps | 60 min |
