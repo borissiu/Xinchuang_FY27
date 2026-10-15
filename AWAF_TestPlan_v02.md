@@ -56,44 +56,33 @@ Verify that the AWAF appliance meets its
 
 | Items | Description | Purpose |
 |---|---|---|
-| Linux with docker | For SSLVPN client simulator |  |
-| SSLVPN client simulator | Generator capable of establishing SSLVPN tunnels | Build 500 / 1500 concurrent tunnels |
-| Linux Client | iperf3 or HTTP load tool | Generate 1/3/5 Gbps payload through a SSLVPN tunnel |
-| Linux Server | iperf3 or HTTP load tool | Generate 1/3/5 Gbps payload through a SSLVPN tunnel |
+| Linux Client | HTTPs load tool or apache benchmark tool (ab) | Generate 1Gbps or 3 Gbps HTTPs payload |
+| Linux Server | HTTPs load tool or apache benchmark tool (ab) | Generate 1Gbps or 3 Gbps HTTPs payload |
 
 ## 4. High level topology
 
 ```
- ┌───────────────────────┐   ┌───────────────────────┐   ┌──────────────────────────┐
- │ Container Based       │   │                       │   │                          │
- │ SSLVPN Conn Generator ┼───┤ 1G/10G                │   │                          │
- │ 500 / 1500 tunnels    │   │                       │   │                          │
- ┌───────────────────────┐   │  DUT: ZTA/APM         │   │                          │
- │ Linux with Docker     │   │  HW #1: Hygon 3250    │   │                          │
- └───────────────────────┘   │  HW #1: Hygon 5280    ├───┼ 1G/10G                   │
+                             ┌───────────────────────┐   ┌──────────────────────────┐
+                             │  DUT: ZTA/APM         │   │                          │
+                             │  HW #1: Hygon 3250    │   │                          │
+                             │  HW #1: Hygon 5280    │   │  Web Server(s)           │
  ┌───────────────────────┐   │                       │   │                          │
- │                       │   │                       │   │                          │
- │ Linux Client(s)       ┼───┤ 1G/10G                │   │  Backend Server(s)       │
- │ (iPerf)               │   │                       │   │  (iperf)                 │
+ │ Linux Client(s)       ┼───┤ 1G/10G                ├───┼  1G/10G                  │
+ │ (apache benchmark)    │   │                       │   │                          │
  └───────────────────────┘   └───────────────────────┘   └──────────────────────────┘
-        │                                                          │
-        └────────────────────── SSLVPN tunnels (TLS) ──────────────┘
-                                  1 Gbps aggregate
 ```
 
 ## 5. Test items
 
 ### 5.1 Test case summary
 
-| Test ID | Category | HW Platform | Concurrent SSLVPN | Target throughput | Duration |
+| Test ID | Category | HW Platform | Target throughput | Duration |
 |---|---|---|---|---|---|
-| TP-01 | Throughput | HW #1 (Hygon 3250 / YK-APM-VE-1G-V23) | 500 | 1 Gbps | 5 min |
-| TP-02 | Throughput | HW #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 500 | 1/3 Gbps | 5 min |
-| TP-03 | Throughput | HW #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 1500 | 1/5 Gbps | 5 min |
-| ST-01 | Stability | HW #1 (Hygon 3250 / YK-APM-VE-1G-V23) | 500 | 1 Gbps | 60 min |
-| ST-02 | Stability | HW #2 (Hygon 5280 / YK-APM-VE-5G-V23) | 500 | 1/3 Gbps | 60 min |
-| ST-03 | Stability | HW #2  (Hygon 5280 / YK-APM-VE-5G-V23)| 1500 | 1/5 Gbps | 60 min |
-| HA-01 | HA Failover | HW #1,#2  | 500 | 1 Gbps | 5 min |
+| TP-01 | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | 1 Gbps | 5 min |
+| TP-02 | Throughput | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | 3 Gbps | 5 min |
+| ST-01 | Stability | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | 1 Gbps | 60 min |
+| ST-02 | Stability | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | 3 Gbps | 60 min |
+| HA-01 | HA Failover | HW #1,#2  | 1 Gbps | 5 min |
 
 ## 6. Result record templates
 
