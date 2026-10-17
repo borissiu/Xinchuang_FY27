@@ -65,10 +65,10 @@ Verify that the AWAF appliance meets its
                              ┌───────────────────────┐   ┌──────────────────────────┐
                              │  DUT: ZTA/APM         │   │                          │
                              │  HW #1: Hygon 3250    │   │                          │
-                             │  HW #1: Hygon 5280    │   │  Web Server(s)           │
- ┌───────────────────────┐   │                       │   │                          │
- │ Linux Client(s)       ┼───┤ 1G/10G                ├───┼  1G/10G                  │
- │ (apache benchmark)    │   │                       │   │                          │
+                             │  HW #1: Hygon 5280    │   │  Testing Server(s)       │
+ ┌───────────────────────┐   │                       │   │  Web Server(s)           │
+ │ Testing Client(s)     ┼───┤ 1G/10G                ├───┼  1G/10G                  │
+ │ (Apache benchmark)    │   │                       │   │                          │
  └───────────────────────┘   └───────────────────────┘   └──────────────────────────┘
 ```
 
@@ -76,13 +76,15 @@ Verify that the AWAF appliance meets its
 
 ### 5.1 Test case summary
 
-| Test ID | Category | HW Platform | Target throughput | Duration |
-|---|---|---|---|---|
-| TP-01 | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | 1 Gbps | 5 min |
-| TP-02 | Throughput | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | 3 Gbps | 5 min |
-| ST-01 | Stability | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | 1 Gbps | 60 min |
-| ST-02 | Stability | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | 3 Gbps | 60 min |
-| HA-01 | HA Failover | HW #1,#2  | 1 Gbps | 5 min |
+| Test ID | Category | HW Platform | Enforcement Mode | Target throughput | Duration |
+|---|---|---|---|---|---|
+| TP-01a | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Transparent | 1 Gbps | 5 min |
+| TP-01b | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking | 1 Gbps | 5 min |
+| TP-02a | Throughput | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Transparent | 3 Gbps | 5 min |
+| TP-02b | Throughput | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking | 3 Gbps | 5 min |
+| ST-01 | Stability | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking | 1 Gbps | 60 min |
+| ST-02 | Stability | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking | 3 Gbps | 60 min |
+| HA-01 | HA Failover | HW #1,#2  | Blocking | 1 Gbps | 5 min |
 
 ## 6. Result record templates
 
@@ -90,8 +92,10 @@ Verify that the AWAF appliance meets its
 
 | Test ID | HW Platform | Avg Throughput (Gbps) | Peak Throughput (Gbps) | Ctrl CPU Avg (%) | Ctrl CPU Peak (%) | Sys CPU Avg (%) | Sys CPU Peak (%) | Mem Avg (%) | Mem Peak (%) | Result |
 |---|---|---|---|---|---|---|---|---|---|---|
-| TP-01 | #1 | | | | | | | | | |
-| TP-02 | #2 | | | | | | | | | |
+| TP-01a | #1 | | | | | | | | | |
+| TP-01b | #1 | | | | | | | | | |
+| TP-02a | #2 | | | | | | | | | |
+| TP-02b | #2 | | | | | | | | | |
 
 ### 6.2 Stability test results (1 hour)
 
