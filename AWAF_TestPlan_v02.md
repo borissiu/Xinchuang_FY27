@@ -65,8 +65,8 @@ Verify that the AWAF appliance meets its
                              ┌───────────────────────┐   ┌──────────────────────────┐
                              │  DUT: ZTA/APM         │   │                          │
                              │  HW #1: Hygon 3250    │   │                          │
-                             │  HW #1: Hygon 5280    │   │  Testing Server(s)       │
- ┌───────────────────────┐   │                       │   │  Web Server(s)           │
+                             │  HW #1: Hygon 5280    │   │                          │
+ ┌───────────────────────┐   │                       │   │  Testing Web Server(s)   │
  │ Testing Client(s)     ┼───┤ 1G/10G                ├───┼  1G/10G                  │
  │ (Apache benchmark)    │   │                       │   │                          │
  └───────────────────────┘   └───────────────────────┘   └──────────────────────────┘
@@ -90,12 +90,12 @@ Verify that the AWAF appliance meets its
 
 ### 6.1 Throughput test results
 
-| Test ID | HW Platform | Avg Throughput (Gbps) | Peak Throughput (Gbps) | Ctrl CPU Avg (%) | Ctrl CPU Peak (%) | Sys CPU Avg (%) | Sys CPU Peak (%) | Mem Avg (%) | Mem Peak (%) | Result |
-|---|---|---|---|---|---|---|---|---|---|---|
-| TP-01a | #1 | | | | | | | | | |
-| TP-01b | #1 | | | | | | | | | |
-| TP-02a | #2 | | | | | | | | | |
-| TP-02b | #2 | | | | | | | | | |
+| Test ID | HW Platform | Throughput (Gbps) | Ctrl CPU Avg (%) | Ctrl CPU Peak (%) | Sys CPU Avg (%) | Sys CPU Peak (%) | Mem Avg (%) | Mem Peak (%) | Result |
+|---|---|---|---|---|---|---|---|---|---|
+| TP-01a | #1 | | | | | | | | |
+| TP-01b | #1 | | | | | | | | |
+| TP-02a | #2 | | | | | | | | |
+| TP-02b | #2 | | | | | | | | |
 
 ### 6.2 Stability test results (1 hour)
 
