@@ -47,7 +47,7 @@ Verify that the AWAF appliance meets its
 | Item | HW Platform #1 | HW Platform #2 |
 |---|---|---|
 | License model & capacity | YK-BIG-AWF-VE-**1G**-V23 | YK-BIG-AWF-VE-**3G**-V23 |
-| AWAF software version |  |  |
+| AWAF software version | 17.5.1.x | 17.5.1.x |
 | Kylin OS version |  |  |
 | NIC model / driver / firmware |  |  |
 | CPU Model / Cores / Threads |  |  |
