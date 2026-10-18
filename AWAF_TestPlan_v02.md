@@ -31,7 +31,7 @@ Verify that the AWAF appliance meets its
 3. Preserves service continuity after an **HA failover**.
 
 ## 2b. Testing Items - General Use Cases
-+ 1. AWAF for JSON (blocking mode)
+1. AWAF for JSON (blocking mode)
 > + Enable all signatures
 > > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_add_json_profile.xml)
 > + Optimized signatures only
