@@ -153,13 +153,12 @@ Verify that the AWAF appliance meets its
 Previous testing setup, procedures, test commands and test results
 + [Download PPT](./F5HKLab_v2.pptx)
 
-Apache Benchmark (ab) is blocked by default
+AWAF block Apache Benchmark (user-agent by default, modify User-agent for testing, e.g.
 ```
-ab is blocked by default, need to modify User-agent, e.g.
 ab -q -p 65KB.json -H 'User-agent: PostmanRuntime/7.43.3' -T application/json -c 30 -n 50000 http://192.168.110.119/
 ```
 
-NGINX web server do NOT accept block by default
+NGINX web server do NOT accept POST by default
 ```
 Adjust NGINX error page if required
 
