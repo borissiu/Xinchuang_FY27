@@ -180,6 +180,7 @@ NGINX web server do NOT accept POST by default
 Adjust NGINX error page if required
 
 $ sudo vi /etc/nginx/nginx.conf
+
 location / {
 error_page 405 =200 $uri;
 
