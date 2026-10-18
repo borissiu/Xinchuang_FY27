@@ -150,8 +150,8 @@ Verify that the AWAF appliance meets its
 | Product owner | | | |
 
 ## 8. Key Notes for testing
-Previous testing setup, procedures, test commands and test results
-+ [Download testing details for ref.](./F5HKLab_v2.pptx)
+Previous testing setup, procedures, test commands and test results (password protected)
++ [Download testing details for ref.](./F5HKLab_v2.zip)
 
 AWAF block Apache Benchmark by default, modify User-agent for testing, e.g.
 ```
