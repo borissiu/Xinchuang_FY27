@@ -54,9 +54,6 @@ Verify that the AWAF appliance meets its
 > + Browser Challenges
 > + Server Technologies
 > + Threat Campaigns
-5. Packet Capture
-> + 
-
 
 ## 3. Test environment
 
@@ -101,12 +98,18 @@ Verify that the AWAF appliance meets its
 
 ### 5.1 Test case summary
 
-| Test ID | Category | HW Platform | Enforcement Mode | Target throughput | Duration |
+| Test ID | Category | HW Platform | Enforcement Mode | Security Policy | Target throughput | Duration |
 |---|---|---|---|---|---|
-| TP-01a | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Transparent | 1 Gbps | 5 min |
-| TP-01b | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking | 1 Gbps | 5 min |
+| TP-01a | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Transparent | Enable all Signature | 1 Gbps | 5 min |
+| TP-01b | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking | Enable all Signature | 1 Gbps | 5 min |
+| TP-01c | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking |  Optimized Signature | 1 Gbps | 5 min |
+| TP-01d | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking |  No Json Signature | 1 Gbps | 5 min |
+| TP-01e | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Transparent | Diable all Signature | 1 Gbps | 5 min |
+| TP-01f | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking |  Disable all Signature | 1 Gbps | 5 min |
+
 | TP-02a | Throughput | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Transparent | 3 Gbps | 5 min |
 | TP-02b | Throughput | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking | 3 Gbps | 5 min |
+
 | ST-01 | Stability | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking | 1 Gbps | 60 min |
 | ST-02 | Stability | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking | 3 Gbps | 60 min |
 | HA-01 | HA Failover | HW #1,#2  | Blocking | 1 Gbps | 5 min |
