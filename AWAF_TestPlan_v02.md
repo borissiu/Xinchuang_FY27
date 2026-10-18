@@ -31,21 +31,21 @@ Verify that the AWAF appliance meets its
 3. Preserves service continuity after an **HA failover**.
 
 ## 2b. Testing Items - General Use Cases
-1. AWAF for JSON (transparent mode)
++ 1. AWAF for JSON (blocking mode)
 > + Enable all signatures
 > > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_add_json_profile.xml)
+> + Optimized signatures only
+> > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_optimized_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_optimized_add_json_profile.xml)
+> + No json signature
+> > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)
 > + Disable all signature
 > > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile.xml)
-+ 2. AWAF for JSON (blocking mode)
+2. AWAF for JSON (transparent mode)
 > + Enable all signatures
-> > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_add_json_profile.xml)
-> > + > + Optimized signatures only
-> > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_optimized_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_optimized_add_json_profile.xml)
-> > + > + No json signature
-> > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)
-> > + > + Disable all signature
-> > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile.xml)
-> > + 3. AWAF Event logs
+> > + Use the 1st security policy above
+> + Disable all signature
+> > + Use the last security policy above
+3. AWAF Event logs
 > + GUI Requests Log
 > + Syslog
 4. Attack Signatures Update
