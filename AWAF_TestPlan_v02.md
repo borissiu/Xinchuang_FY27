@@ -106,13 +106,17 @@ Verify that the AWAF appliance meets its
 | TP-01d | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking |  No Json Signature | 1 Gbps | 5 min |
 | TP-01e | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Transparent | Diable all Signature | 1 Gbps | 5 min |
 | TP-01f | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking |  Disable all Signature | 1 Gbps | 5 min |
-
-| TP-02a | Throughput | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Transparent | 3 Gbps | 5 min |
-| TP-02b | Throughput | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking | 3 Gbps | 5 min |
-
-| ST-01 | Stability | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking | 1 Gbps | 60 min |
-| ST-02 | Stability | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking | 3 Gbps | 60 min |
-| HA-01 | HA Failover | HW #1,#2  | Blocking | 1 Gbps | 5 min |
+| | | | | | | |
+| TP-02a | Throughput | HW #1 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Transparent | Enable all Signature | 3 Gbps | 5 min |
+| TP-02b | Throughput | HW #1 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking | Enable all Signature | 3 Gbps | 5 min |
+| TP-02c | Throughput | HW #1 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking |  Optimized Signature | 3 Gbps | 5 min |
+| TP-02d | Throughput | HW #1 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking |  No Json Signature | 3 Gbps | 5 min |
+| TP-02e | Throughput | HW #1 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Transparent | Diable all Signature | 3 Gbps | 5 min |
+| TP-02f | Throughput | HW #1 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking |  Disable all Signature | 3 Gbps | 5 min |
+| | | | | | | |
+| ST-01 | Stability | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking | Enable all Signature | 1 Gbps | 60 min |
+| ST-02 | Stability | HW #2 (Hygon 5280 / YK-BIG-AWF-VE-**3G**-V23) | Blocking | Enable all Signature | 3 Gbps | 60 min |
+| HA-01 | HA Failover | HW #1,#2  | Blocking | Enable all Signature | 1 Gbps | 5 min |
 
 ## 6. Result record templates
 
