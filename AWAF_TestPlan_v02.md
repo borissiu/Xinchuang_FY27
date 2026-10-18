@@ -27,7 +27,7 @@ Verify that the AWAF appliance meets its
 
 ## 2a. Testing Items - Performance & Stabliity
 1. Sustain **1 or 3 Gbps throughput**.
-2. Sustain the same **load continuously for 1 hour** over a single/few concurrent SSLVPN connections.
+2. Sustain the same **load continuously for 1 hour**.
 3. Preserves service continuity after an **HA failover**.
 
 ## 2b. Testing Items - General Use Cases
