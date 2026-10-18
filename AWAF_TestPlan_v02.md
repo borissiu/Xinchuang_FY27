@@ -99,7 +99,7 @@ Verify that the AWAF appliance meets its
 ### 5.1 Test case summary
 
 | Test ID | Category | HW Platform | Enforcement Mode | Security Policy | Target throughput | Duration |
-|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | TP-01a | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Transparent | Enable all Signature | 1 Gbps | 5 min |
 | TP-01b | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking | Enable all Signature | 1 Gbps | 5 min |
 | TP-01c | Throughput | HW #1 (Hygon 3250 / YK-BIG-AWF-VE-**1G**-V23) | Blocking |  Optimized Signature | 1 Gbps | 5 min |
