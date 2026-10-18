@@ -33,13 +33,13 @@ Verify that the AWAF appliance meets its
 ## 2b. Testing Items - General Use Cases
 1. AWAF for JSON (blocking mode)
 > + Enable all signatures
-> > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_add_json_profile.xml)
+> > + [Import this Security Policy to AWAF for testing (IRDTAXP_policy01_ipv4_443_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_add_json_profile.xml)
 > + Optimized signatures only
-> > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_optimized_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_optimized_add_json_profile.xml)
+> > + [Import this Security Policy to AWAF for testing (IRDTAXP_policy01_ipv4_443_optimized_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_optimized_add_json_profile.xml)
 > + No json signature
-> > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)
+> > + [Import this Security Policy to AWAF for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)
 > + Disable all signature
-> > + [Download & Import this Security Policy for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile.xml)
+> > + [Import this Security Policy to AWAF for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile.xml)
 2. AWAF for JSON (transparent mode)
 > + Enable all signatures
 > > + Use the 1st security policy above
