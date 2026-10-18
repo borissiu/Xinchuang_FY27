@@ -151,9 +151,9 @@ Verify that the AWAF appliance meets its
 
 ## 8. Key Notes for testing
 Previous testing setup, procedures, test commands and test results
-+ [Download PPT](./F5HKLab_v2.pptx)
++ [Download testing details for ref.](./F5HKLab_v2.pptx)
 
-AWAF block Apache Benchmark (user-agent by default, modify User-agent for testing, e.g.
+AWAF block Apache Benchmark by default, modify User-agent for testing, e.g.
 ```
 ab -q -p 65KB.json -H 'User-agent: PostmanRuntime/7.43.3' -T application/json -c 30 -n 50000 http://192.168.110.119/
 ```
