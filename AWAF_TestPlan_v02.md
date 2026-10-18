@@ -37,7 +37,7 @@ Verify that the AWAF appliance meets its
 > + Optimized signatures only
 > > + [Import this Security Policy to AWAF for testing (IRDTAXP_policy01_ipv4_443_optimized_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_optimized_add_json_profile.xml)
 > + No json signature
-> > + [Import this Security Policy to AWAF for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)
+> > + [Import this Security Policy to AWAF for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_no_json_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_json_add_json_profile.xml)
 > + Disable all signature
 > > + [Import this Security Policy to AWAF for testing (IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile.xml)](./IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile.xml)
 2. AWAF for JSON (transparent mode)
