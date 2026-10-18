@@ -33,7 +33,7 @@ Verify that the AWAF appliance meets its
 ## 2b. Testing Items - General Use Cases
 1. AWAF for JSON (transparent mode)
 > + Enable all signatures
-> > + Security Policy : IRDTAXP_policy01_ipv4_443_enable_all_signature_add_json_profile
+> > + Security Policy : [Download](./IRDTAXP_policy01_ipv4_443_enable_all_signature_add_json_profile.xml)
 > + Disable all signature
 > > + Security Policy : IRDTAXP_policy01_ipv4_443_disable_all_signature_add_json_profile
 2. AWAF for JSON (blocking mode)
